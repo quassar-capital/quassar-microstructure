@@ -10,8 +10,12 @@ description = "Research-oriented stochastic microstructure kernels for Quassar C
 name = "_core"
 crate-type = ["cdylib", "rlib"]
 
+[features]
+default = ["extension-module"]
+extension-module = ["pyo3/extension-module"]
+
 [dependencies]
-pyo3 = { version = "0.22", features = ["extension-module"] }
+pyo3 = { version = "0.22", features = [] }
 rand = "0.8"
 rand_distr = "0.4"
 rand_chacha = "0.3"
