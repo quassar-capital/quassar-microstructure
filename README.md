@@ -10,6 +10,25 @@ Its research scope encompasses limit order book dynamics, transaction costs, mar
 
 The methodological framework emphasizes mathematical rigor, empirical reliability, market mechanism analysis, numerical accuracy, reproducibility, and disciplined interpretation of financial market data.
 
+<!-- RESEARCH_INDEX_START -->
+## Research Programs & Scientific Implementations
+
+The following research programs have corresponding scientific implementations in this repository.
+
+### Research 01 — Market Microstructure Research
+
+Quantitative market microstructure methods with Python and Rust implementations.
+
+**Scientific implementation**
+
+- [`research.py`](src/quassar_microstructure/research.py)
+- [`lib.rs`](rust/src/lib.rs)
+
+**Automated validation**
+
+- [`test_research.py`](tests/test_research.py)
+<!-- RESEARCH_INDEX_END -->
+
 ## Research Domains
 
 ### Market Structure & Trading Mechanisms

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "repository": "quassar-microstructure",
+  "research": [
+    {
+      "id": "01",
+      "title": "Market Microstructure Research",
+      "description": "Quantitative market microstructure methods with Python and Rust implementations.",
+      "implementation": [
+        "src/quassar_microstructure/research.py",
+        "rust/src/lib.rs"
+      ],
+      "tests": [
+        "tests/test_research.py"
+      ],
+      "experiments": []
+    }
+  ]
+}
