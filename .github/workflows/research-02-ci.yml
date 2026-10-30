@@ -1,0 +1,34 @@
+
+name: Research 02 Markov Liquidity CI
+
+on:
+  push:
+    branches:
+      - research-02-state-dependent-order-book
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  scientific-validation:
+    name: Analytical Markov Liquidity Validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install scientific dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pytest
+
+      - name: Validate Research 02 analytical references
+        run: |
+          python -m pytest -q research_02/tests/test_markov_liquidity.py
