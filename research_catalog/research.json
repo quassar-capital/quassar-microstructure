@@ -1,3 +1,4 @@
+
 {
   "schema_version": 1,
   "repository": "quassar-microstructure",
@@ -12,6 +13,19 @@
       ],
       "tests": [
         "tests/test_research.py"
+      ],
+      "experiments": []
+    },
+    {
+      "id": "02",
+      "title": "State-Dependent Limit Order Book Dynamics",
+      "description": "Finite-state queue-reactive continuous-time Markov models for stationary liquidity configurations, spectral relaxation, first-passage times, and finite-horizon queue-depletion probabilities. Includes reproducible analytical validation and documented numerical limitations.",
+      "implementation": [
+        "research_02/python/state_dependent_book.py",
+        "research_02/python/liquidity_transitions.py"
+      ],
+      "tests": [
+        "research_02/tests/test_markov_liquidity.py"
       ],
       "experiments": []
     }
