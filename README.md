@@ -1,3 +1,4 @@
+
 # Quassar Microstructure
 
 **Market Microstructure | Price Formation | Liquidity Dynamics | Order Book Analysis | Execution Research**
@@ -27,6 +28,19 @@ Quantitative market microstructure methods with Python and Rust implementations.
 **Automated validation**
 
 - [`test_research.py`](tests/test_research.py)
+
+### Research 02 — State-Dependent Limit Order Book Dynamics
+
+Finite-state queue-reactive continuous-time Markov models for stationary liquidity configurations, spectral relaxation, first-passage times, and finite-horizon queue-depletion probabilities. Includes reproducible analytical validation and documented numerical limitations.
+
+**Scientific implementation**
+
+- [`state_dependent_book.py`](research_02/python/state_dependent_book.py)
+- [`liquidity_transitions.py`](research_02/python/liquidity_transitions.py)
+
+**Automated validation**
+
+- [`test_markov_liquidity.py`](research_02/tests/test_markov_liquidity.py)
 <!-- RESEARCH_INDEX_END -->
 
 ## Research Domains
