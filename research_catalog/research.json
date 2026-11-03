@@ -28,6 +28,20 @@
         "research_02/tests/test_markov_liquidity.py"
       ],
       "experiments": []
+    },
+    {
+      "id": "03",
+      "title": "Latency-Constrained Price Discovery and Formal Analysis of Executable Liquidity in Fragmented Markets",
+      "description": "Deterministic price-time matching and cancellation analysis across independent trading venues, with explicit message transmission lifecycles, participant-specific observation constraints, and finite attainable execution sets. Includes reproducible analytical reference tests and documented limits on nonanticipativity, empirical calibration, and price-discovery interpretation.",
+      "implementation": [
+        "research_03/python/venue_kernel.py",
+        "research_03/python/latency_model.py",
+        "research_03/python/executability.py"
+      ],
+      "tests": [
+        "research_03/tests/test_latency_execution.py"
+      ],
+      "experiments": []
     }
   ]
 }

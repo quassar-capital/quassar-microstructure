@@ -41,6 +41,20 @@ Finite-state queue-reactive continuous-time Markov models for stationary liquidi
 **Automated validation**
 
 - [`test_markov_liquidity.py`](research_02/tests/test_markov_liquidity.py)
+
+### Research 03 — Latency-Constrained Price Discovery and Formal Analysis of Executable Liquidity in Fragmented Markets
+
+Deterministic price-time matching and cancellation analysis across independent trading venues, with explicit message transmission lifecycles, participant-specific observation constraints, and finite attainable execution sets. Includes reproducible analytical reference tests and documented limits on nonanticipativity, empirical calibration, and price-discovery interpretation.
+
+**Scientific implementation**
+
+- [`venue_kernel.py`](research_03/python/venue_kernel.py)
+- [`latency_model.py`](research_03/python/latency_model.py)
+- [`executability.py`](research_03/python/executability.py)
+
+**Automated validation**
+
+- [`test_latency_execution.py`](research_03/tests/test_latency_execution.py)
 <!-- RESEARCH_INDEX_END -->
 
 ## Research Domains
