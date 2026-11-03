@@ -166,7 +166,7 @@ def test_invalid_policy_and_duplicate_messages():
     scenario = LatencyScenario(("A",))
     message = submit("buy", "taker", "buy", 100, 1, 1)
 
-    with pytest.raises(ValueError, match="Duplicate policy"):
+    with pytest.raises(ValueError, match="Policy names must be unique"):
         enumerate_attainable(
             scenario, "taker", (),
             (
